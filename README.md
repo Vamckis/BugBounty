@@ -1,5 +1,5 @@
 # BugBounty
-Includes details of my bugbounties
+Includes Steps of my BugBounties
 
 ### Step1: Google Dorking
 - inurl:.gov password|credential|username filetype:log
