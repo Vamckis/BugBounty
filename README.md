@@ -23,3 +23,9 @@ Includes Steps of my BugBounties
 ### Step4: Nuclei
 - nuclei -t /root/nuclei-templates/ -l all-live.txt -es info -o nucleiall.txt
 
+### Step5: back-me-up
+- ./bulkyy.sh -f gauedfile.txt
+
+### Step6: Grep for sensitive files
+- confidential,secret,sensitive,\.doc,\.xlsx,\.csv,employee-only, propreitary.
+- grep “/api”,”/api/v1”
