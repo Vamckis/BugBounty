@@ -11,6 +11,9 @@ Includes Steps of my BugBounties
 - inurl:netflix.com not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:txt
 
 ### Step2: Subdomainer
+- ./subdomainer -t netflix.com -f true
 
 ### Step3: httpx
+- cat all.txt | httpx -mc 200,403 -o liveallurls.txt
+ 
 ### Step4: Nuclei
