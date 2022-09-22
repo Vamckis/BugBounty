@@ -10,6 +10,10 @@ Includes Steps of my BugBounties
 - inurl:netflix.com not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:doc
 - inurl:netflix.com not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:txt
 
+# Run Chandrahasa - Automation tool of steps 2,3,4
+- chmod +x chandrahasa.sh 
+- ./chandrahasa.sh websitename.com
+
 ### Step2: Subdomainer
 - ./subdomainer -t netflix.com -f true
 
@@ -17,3 +21,5 @@ Includes Steps of my BugBounties
 - cat all.txt | httpx -mc 200,403 -o liveallurls.txt
  
 ### Step4: Nuclei
+- nuclei -t /root/nuclei-templates/ -l all-live.txt -es info -o nucleiall.txt
+
