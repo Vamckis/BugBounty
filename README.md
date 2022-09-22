@@ -12,5 +12,5 @@ Includes Steps of my BugBounties
 
 ### Step2: Subdomainer
 
-
-### Step3: Nuclei
+### Step3: httpx
+### Step4: Nuclei
