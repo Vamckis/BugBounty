@@ -3,6 +3,8 @@ Link: https://github.com/AlexisAhmed/BugBountyToolkit
 ### Docker Image
 - docker pull hackersploit/bugbountytoolkit
 - docker run -it hackersploit/bugbountytoolkit /bin/bash
+- cd toolkit
+- waf00f demo.testfire.net
 
 ### Installation:
 - git clone https://github.com/AlexisAhmed/BugBountyToolkit.git
