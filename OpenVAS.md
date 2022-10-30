@@ -1,5 +1,10 @@
-### Installation
-- Link: https://www.geeksforgeeks.org/installing-openvas-on-kali-linux/
+- Link1: https://www.geeksforgeeks.org/installing-openvas-on-kali-linux/
+- Link2: https://www.kali.org/blog/configuring-and-tuning-openvas-in-kali-linux/
+
+- sudo apt update                      
+- sudo apt upgrade -y
+- sudo apt dist-upgrade -y
+### Installation of OpenVAS
 - sudo apt install openvas
 - gvm-setup
 - gvm-check-setup
