@@ -29,3 +29,5 @@
 - Adminisration --> Feed Status
 - Configuration --> Targets, Port Lists, Scan Configs
 - Scans --> Tasks, Reports, Results, Vulnerabilities
+
+Check for QoD (Quality Of Defects) for each scan.
