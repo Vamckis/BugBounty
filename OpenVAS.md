@@ -11,6 +11,7 @@
 
 ### Passowrd Reset
 - gvmd --user=admin --new-password=passwd;
+- gvm-feed-update
 - Sudo gvm-start
 - sudo gvm-stop
 
