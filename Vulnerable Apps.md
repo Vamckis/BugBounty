@@ -2,7 +2,7 @@
 Link: https://www.golinuxcloud.com/install-dvwa-kali-linux/
 
 ### DVWA Docker Image:
-- docker run --rm -it -p 80:80 vulnerables/web-dvwa
+- docker run --rm -it -p 8081:8081 vulnerables/web-dvwa
 
 ### After installation to start DVWA
 - service apache2 start
