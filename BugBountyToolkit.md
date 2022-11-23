@@ -13,7 +13,7 @@ Link: https://github.com/AlexisAhmed/BugBountyToolkit
 - ./install.sh
 
 ### Installed Tools:
-- altdns
+- altdns : Subdomain discovery through alterations and permutations
 - amass
 - awscli
 - bucket_finder
