@@ -18,6 +18,9 @@
 - Sudo gvm-start
 - sudo gvm-stop
 
+### Update Feed
+- gvm-feed-update
+
 ### Create User
 - sudo runuser -u _gvm -- gvmd --create-user=admin2 --new-password=12345 
 - sudo runuser -u _gvm -- gvmd --user=admin --new-password=new_password 
