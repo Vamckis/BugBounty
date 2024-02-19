@@ -6,3 +6,12 @@ Link: https://blog.mozilla.org/fxtesteng/2016/05/11/docker-owasp-zap-part-one/
 - docker exec practical_chatterjee zap-cli open-url 'https://demo.testfire.net'
 - docker exec practical_chatterjee zap-cli active-scan 'https://demo.testfire.net'
 - docker logs practical_chatterjee
+
+### Authentication with ZAP
+- Include target app inside the context
+- Exclude logout page, password change
+- set authentication mechanism
+- define auth params
+- setup login/logout indicators
+- add valid user and password for login
+- Run spider
