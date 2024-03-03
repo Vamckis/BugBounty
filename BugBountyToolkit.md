@@ -1,11 +1,17 @@
 Link: https://github.com/AlexisAhmed/BugBountyToolkit
 
-### Docker Image
+### Docker Image 1
 - docker pull hackersploit/bugbountytoolkit
 - docker run -it hackersploit/bugbountytoolkit /bin/bash
 - cd toolkit
 - waf00f demo.testfire.net
 
+### Docker Image 2
+- docker pull chvancooten/bugbountyscanner
+- docker run -v $(pwd):/root/bugbounty -it chvancooten/bugbountyscanner /bin/bash
+- ./BugBountyScanner.sh -h
+- ./BugBountyScanner.sh -d demo.testfire.net
+  
 ### Installation:
 - git clone https://github.com/AlexisAhmed/BugBountyToolkit.git
 - cd BugBountyToolkit
