@@ -9,8 +9,8 @@ Link: https://github.com/AlexisAhmed/BugBountyToolkit
 ### Docker Image 2
 - docker pull chvancooten/bugbountyscanner
 - docker run -v $(pwd):/root/bugbounty -it chvancooten/bugbountyscanner /bin/bash
-- ./BugBountyScanner.sh -h
-- ./BugBountyScanner.sh -d demo.testfire.net
+- docker run -it --rm chvancooten/bugbountyscanner -d demo.testfire.net --quick > bugbountyscanner_report.txt
+- ./BugBountyScanner.sh -d demo.testfire.net --quick > bugbountyscanner_report.txt
   
 ### Installation:
 - git clone https://github.com/AlexisAhmed/BugBountyToolkit.git
