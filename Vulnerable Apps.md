@@ -16,3 +16,5 @@ Link: https://www.golinuxcloud.com/install-dvwa-kali-linux/
 - www.try2hack.nl
 - www.hellnoundhackers.org
 - https://03c8.net  (For xsser)
+- https://ginandjuice.shop/
+- https://xss-game.appspot.com/
